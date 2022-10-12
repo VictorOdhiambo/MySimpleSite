@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple WebSite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1>My Simple Site</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="" id="signUpLink">Sign Up</a></li>
+                    <li><a href="" id="detailLink">All Records</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="SignUp">
+            <form id="myForm" method="post">
+                <div class="input-field">
+                    <label for="name">Full name</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter fullname...">
+                </div>
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email...">
+                </div>
+                <div class="input-field">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter phone...">
+                </div>
+                <div class="input-field">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" placeholder="Enter address...">
+                </div>
+                <div class="input-field">
+                    <label for=""></label>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div id="Records">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Message</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; My Simple Site 2022</p>
+    </footer>
+    <script src="site.js"></script>
+</body>
+</html>
